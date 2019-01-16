@@ -1,15 +1,4 @@
 export function toRna(dna) {
-    if (dna == "C") {
-        return "G"
-    }
-    if (dna == "G") {
-        return "C"
-    }
-    if (dna == "A") {
-        return "U"
-    }
-    if (dna == "T") {
-        return "A"
-    }
-    return ""
+    var rna_map = {"C": "G", "G": "C", "A": "U", "T": "A", "": ""}
+    return rna_map[dna]
 }
